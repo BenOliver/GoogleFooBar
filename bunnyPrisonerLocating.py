@@ -38,3 +38,9 @@ Output:
 Inputs:
     (int) x = 5
 '''
+def bunnyCounter(x,y):
+    def seriesSum(start,end):
+        #sum of an arithmatic series
+        return (start+end)*(abs(start-end)+1)/2
+    return seriesSum(x,1)+seriesSum(x,x+y-2) 
+print(bunnyCounter(3,2))
